@@ -17,6 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?><!DOCTYPE html>
 <?php astra_html_before(); ?>
 <html <?php language_attributes(); ?>>
+
 <head>
 <?php astra_head_top(); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -37,7 +38,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 <?php wp_body_open(); ?>
 
 <a
-	class="skip-link screen-reader-text"
+	class="skip-link screen-reader-text menu"
 	href="#content"
 	role="link"
 	title="<?php echo esc_attr( astra_default_strings( 'string-header-skip-link', false ) ); ?>">
@@ -64,6 +65,6 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 
 	astra_content_before();
 	?>
-	<div id="content" class="site-content">
+	<div id="content" class="site-content sticky-top">
 		<div class="ast-container">
 		<?php astra_content_top(); ?>
