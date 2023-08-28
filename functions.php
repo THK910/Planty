@@ -17,6 +17,7 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 if ( !function_exists( 'child_theme_configurator_css' ) ):
     function child_theme_configurator_css() {
         wp_enqueue_style( 'chld_thm_cfg_child', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css', array( 'astra-theme-css','astra-contact-form-7' ) );
+        wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css',)
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
