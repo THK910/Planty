@@ -28,6 +28,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	astra_footer_after(); 
 ?>
 	</div><!-- #page -->
+
+	<div class="ast-footer-copyright">
+    <p><a class="mentions"href="http://planty.local/">Mentions légales</a></p>
+</div>
+
 <?php 
 	astra_body_bottom();    
 	wp_footer(); 

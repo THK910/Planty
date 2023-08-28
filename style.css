@@ -28,11 +28,25 @@ line-height: normal;
 }
 
 .custom-logo {
-    width: 201px;
-    height: 19px;
-    flex-shrink: 0;
+width: 201px;
+height: 19px;
+flex-shrink: 0;
 }
 
 #masthead .ast-container {
-    padding-right: 0px;
+padding-right: 0px;
 }
+
+/* FOOTER */
+
+.ast-footer-copyright p {
+margin-bottom: 1.75em;
+text-align: center;
+color: beige !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+padding-top: 25px;
+line-height: normal;
+}
+
