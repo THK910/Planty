@@ -239,3 +239,84 @@ input[type="submit"] {
     margin: 0 auto; /* Cette règle centre le bouton horizontalement */
     display: block; /* Assurez-vous qu'il s'affiche en bloc pour appliquer le centrage horizontal */
 }
+
+/* Styles pour diviser en colonnes */
+.form-container {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permet le passage à la ligne pour les colonnes */
+    justify-content: space-between; /* Espacement entre les colonnes */
+    position: relative; /* Position relative pour le conteneur */
+}
+
+/* Styles pour chaque colonne (supprimez la propriété border) */
+.form-column1 {
+    width: calc(50% - 40px); /* 50% de la largeur avec une marge de 40px entre les colonnes */
+    padding: 10px;
+    margin-bottom: 10px; /* Espacement entre les colonnes */
+    margin-right: 40px; /* Augmentation de la marge à droite pour un écart de 40px */
+}
+
+.form-column2 {
+    width: calc(50% - 40px); /* 50% de la largeur avec une marge de 40px entre les colonnes */
+    padding: 10px;
+    margin-bottom: 10px; /* Espacement entre les colonnes */
+}
+
+/* Styles pour les étiquettes */
+.form-group label {
+    color: #FFFFFF; /* Couleur du texte en noir */
+}
+
+/* Styles pour le bouton "Envoyer" */
+.submit-group {
+    text-align: center; /* Centrez horizontalement le bouton */
+}
+
+input[type="submit"] {
+    background-color: #E0B9B4; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block; /* Convertir en élément de bloc */
+    margin: 0 auto; /* Centrez horizontalement le bouton */
+}
+
+.form-container::before {
+    content: "";
+    width: 1px;
+    height: 73%; /* Prend la taille entière du conteneur */
+    background-color: #FFF; /* Couleur de la barre séparatrice */
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px); /* Centrez la barre séparatrice entre les colonnes */
+}
+
+.form-column1 h2 {
+    color: #fff; /* Couleur du texte en blanc */
+    font-family: 'Syne', sans-serif; /* Police de caractères Syne */
+    font-size: 30px; /* Taille de police de 30px */
+    font-style: normal; /* Style normal */
+    font-weight: 700; /* Gras */
+    line-height: normal; /* Hauteur de ligne normale */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.form-column2 h2 {
+    color: #fff; /* Couleur du texte en blanc */
+    font-family: 'Syne', sans-serif; /* Police de caractères Syne */
+    font-size: 30px; /* Taille de police de 30px */
+    font-style: normal; /* Style normal */
+    font-weight: 700; /* Gras */
+    line-height: normal; /* Hauteur de ligne normale */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+@media screen and (max-width: 767px) {
+    .form-column {
+        width: 100%; /* Largeur à 100% pour prendre toute la largeur de l'écran */
+        margin-right: 0; /* Supprimer la marge à droite en mode téléphone */
+    }
+}
