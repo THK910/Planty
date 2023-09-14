@@ -50,3 +50,192 @@ padding-top: 25px;
 line-height: normal;
 }
 
+/* COMMANDER */
+
+.rectangle-button {
+    display: flex;
+    width: 82px; /* Largeur totale du bouton (51px + 31px) */
+    height: 56px;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.left-part {
+    width: 51px; /* Largeur du côté gauche */
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 56px; /* Centre le texte verticalement */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-part {
+    width: 31px; /* Largeur du côté droit */
+    background-color: #DC9F96;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-family: Syne, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.control {
+    width: 100%;
+    height: 50%;
+    background-color: #DC9F96; /* Couleur de fond pour les boutons + et - */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Ajout d'une ligne blanche pour séparer le côté supérieur droit et inférieur */
+.right-part::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.custom-button {
+    display: flex;
+    width: 100px;
+    height: 56px;
+    padding: 9px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #E0B9B4; /* Couleur de fond du bouton */
+    color: #FFF; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    text-align: center;
+    font-family: Syne, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px; /* Hauteur de ligne */
+}
+
+.custom-button:hover {
+    background: #D99C95; /* Couleur de fond au survol */
+}
+
+
+/* FORMULAIRE */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 80%; /* Largeur du conteneur du formulaire */
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Pour positionner la barre de séparation */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-left, .form-right {
+    width: 48%; /* Largeur des deux colonnes */
+    float: left;
+    position: relative; /* Pour la barre de séparation */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #FFF; /* Couleur du texte des titres */
+    font-family: Syne, sans-serif; /* Police de caractères */
+    font-size: 20px; /* Taille de la police */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 383px; /* Largeur spécifique */
+    height: 71px; /* Hauteur spécifique */
+    flex-shrink: 0; /* Ne rétrécit pas en flex */
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-separator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Position au milieu */
+    width: 860px; /* Largeur de la barre de séparation */
+    height: 1px; /* Hauteur de la barre de séparation */
+    background-color: #FFF; /* Couleur de la barre de séparation */
+    content: "";
+}
+
+.clear {
+    clear: both;
+    /* Efface les flottants pour éviter des problèmes de mise en page */
+}
+
+input[type="submit"] {
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #E0B9B4; /* Couleur de fond */
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Bordure arrondie de 5px */
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+.wpcf7-submit {
+    margin: 0 auto; /* Cette règle centre le bouton horizontalement */
+    display: block; /* Assurez-vous qu'il s'affiche en bloc pour appliquer le centrage horizontal */
+}
