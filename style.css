@@ -313,10 +313,3 @@ input[type="submit"] {
     line-height: normal; /* Hauteur de ligne normale */
     text-align: left; /* Alignement du texte à gauche */
 }
-
-@media screen and (max-width: 767px) {
-    .form-column {
-        width: 100%; /* Largeur à 100% pour prendre toute la largeur de l'écran */
-        margin-right: 0; /* Supprimer la marge à droite en mode téléphone */
-    }
-}
