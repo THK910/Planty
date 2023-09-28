@@ -234,7 +234,6 @@ input[type="submit"] {
     line-height: 1.5;
 }
 
-
 .wpcf7-submit {
     margin: 0 auto; /* Cette règle centre le bouton horizontalement */
     display: block; /* Assurez-vous qu'il s'affiche en bloc pour appliquer le centrage horizontal */
@@ -312,4 +311,32 @@ input[type="submit"] {
     font-weight: 700; /* Gras */
     line-height: normal; /* Hauteur de ligne normale */
     text-align: left; /* Alignement du texte à gauche */
+}
+
+@media screen and (max-width: 1024px) {
+    .form-container {
+        display: block !important;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+/* Ajoutez un média query pour cibler les écrans plus larges que 1130px */
+@media screen and (min-width: 1130px) {
+    .form-container::before {
+        display: block; /* Affiche la barre blanche */
+    }
+}
+
+/* Ciblez les écrans plus étroits que 1130px pour masquer la barre blanche */
+@media screen and (max-width: 1130px) {
+    .form-container::before {
+        display: none; /* Masque la barre blanche */
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .form-group input[type="text"], .form-group input[type="email"] {
+        width: 286px;
+    }
 }
