@@ -60,6 +60,7 @@ line-height: normal;
     overflow: hidden;
 }
 
+
 .left-part {
     width: 51px; /* Largeur du côté gauche */
     background-color: #fff;
@@ -250,14 +251,12 @@ input[type="submit"] {
 
 /* Styles pour chaque colonne (supprimez la propriété border) */
 .form-column1 {
-    width: calc(50% - 40px); /* 50% de la largeur avec une marge de 40px entre les colonnes */
     padding: 10px;
     margin-bottom: 10px; /* Espacement entre les colonnes */
     margin-right: 40px; /* Augmentation de la marge à droite pour un écart de 40px */
 }
 
 .form-column2 {
-    width: calc(50% - 40px); /* 50% de la largeur avec une marge de 40px entre les colonnes */
     padding: 10px;
     margin-bottom: 10px; /* Espacement entre les colonnes */
 }
@@ -312,6 +311,10 @@ input[type="submit"] {
     line-height: normal; /* Hauteur de ligne normale */
     text-align: left; /* Alignement du texte à gauche */
 }
+
+
+/* RESPONSIVE */
+
 
 @media screen and (max-width: 1024px) {
     .form-container {

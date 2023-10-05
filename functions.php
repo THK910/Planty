@@ -28,7 +28,7 @@ add_filter('wp_nav_menu_items', 'personnaliser_menu_si_connecte', 10, 2);
 function personnaliser_menu_si_connecte($items, $args) {
     if ($args->theme_location == 'primary' && is_user_logged_in()) {
         // Utilisateur connecté, ajouter le lien "Admin" au menu
-        $admin_link = '<li href="http://planty.local/wp-admin/" class="menu-link menu-item menu-item-type-post_type menu-item-object-page menu-item-121">Admin</a>';
+        $admin_link = '<li class="menu-link menu-item menu-item-type-post_type menu-item-object-page menu-item-121"> <a href="http://planty.local/wp-admin/" >Admin</a></li>';
         
         // Convertir la chaîne $items en un tableau d'éléments
         $menu_items = explode('</li>', $items);
